@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:musibat/home.dart';
 
+import 'new file.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -98,7 +100,16 @@ class _MyHomePageState extends State<MyHomePage> {
            Navigator.push(context, MaterialPageRoute(builder: (BuildContext Context)=>const home()));
          },
              child: const Icon(Icons.arrow_forward,color: Colors.green,size: 25,)),
+           SizedBox(height: 10,),
+
+            ElevatedButton(onPressed: (){
+              Navigator.push(context, MaterialPageRoute(builder:
+                  (BuildContext Context)=>const newl()));
+            },
+                child: const Icon(Icons.arrow_forward,color: Colors.green,size: 25,)),
+
             const Text(
+
               'You have pushed the button this many times:',
             ),
             Text(
